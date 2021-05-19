@@ -75,6 +75,9 @@
     font-weight: lighter;
     font-style: italic;
 }
+
+
+
 /* project */
 
 .project-class{
@@ -102,7 +105,7 @@
     max-width: 980px;
     /* border: 2px solid black; */
     padding: 20px;
-
+    
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     
@@ -131,12 +134,12 @@ a .desc{
     margin-top: 0;
     box-sizing: border-box;
     height: 20%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 .code{
-   opacity: 0;
+    opacity: 0;
     color: #db5567;
     transition: 0.2s;
 }
@@ -178,7 +181,7 @@ a .desc{
 }
 .inner-1{
     height: auto;
-     
+    
     margin: 50px;
     color: white;
     
@@ -257,6 +260,32 @@ a .desc{
 }
 
 
+@media screen and (max-width:572px) {
+    .welcome-section-class h1{
+        font-size: 2.5rem;
+    }
+    .welcome-section-class p{
+        font-size: 1.5rem;
+    }
+    .project-class h1{ 
+        font-size: 1.5rem; 
+        border-bottom: 2px solid white;
+    }
+    .inner-1 h1{
+        font-size: 2rem;
+    }
+    .nav-class ul{
+        justify-content: space-around;
+    }
+    .footer-class p{
+        text-align: center;
+        line-height: 50px;
+    }
+    .footer-class p a{
+        display: block;
+        text-align: center;
+    }
+}
 
 
- 
+
