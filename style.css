@@ -102,7 +102,7 @@
 .project-tile{
     margin-top: 50px;
     width: 100%;
-    max-width: 980px;
+    max-width: 1280px;
     /* border: 2px solid black; */
     padding: 20px;
     
@@ -273,6 +273,34 @@ a .desc{
     }
     .inner-1 h1{
         font-size: 2rem;
+    }
+    .nav-class ul{
+        justify-content: space-around;
+    }
+    .footer-class p{
+        text-align: center;
+        line-height: 50px;
+    }
+    .footer-class p a{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:376px) {
+    .welcome-section-class h1{
+        font-size: 2rem;
+    }
+    .welcome-section-class p{
+        font-size: 1rem;
+    }
+    .project-class h1{ 
+        font-size: 1rem; 
+        border-bottom: 2px solid white;
+    }
+    .inner-1 h1{
+        font-size: 1.5rem;
     }
     .nav-class ul{
         justify-content: space-around;
