@@ -146,43 +146,6 @@
 	}
 </style>
 
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
  
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
-
-		embedded_svc.init(
-			'https://sunteck.my.salesforce.com',
-			'https://sunteck.secure.force.com',
-			gslbBaseURL,
-			'00D6F000002XTsW',
-			'Sunteck_Chat_Agents',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-y37hzm.salesforceliveagent.com/content',
-				deploymentId: '5726F0000000kRU',
-				buttonId: '5736F0000000iv8',
-				baseLiveAgentURL: 'https://d.la1-core1.sfdc-y37hzm.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Sunteck_Chat_Agents',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
-
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://sunteck.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-</script>
-    
 </body>
 </html>
