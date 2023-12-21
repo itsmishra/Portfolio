@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #formElem{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+  }
+  #formElem input{
+    padding: 10px;
+   margin: 10px;
+ }
+ #formElem input[type="submit"]{
+   cursor: pointer;
+}
+ #formElem label{
+   text-decoration: underline;
+ margin: 0px 10px;
+}
+</style>
+<script src="./jsLearning.js" defer type="module"></script>
+<body>
+  
+  <form id="formElem">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" value="John">
+    <label for="name">Last Name</label>
+    <input id="lastname" type="text" name="lastname" value="Smith">
+    <label for="name">Company Name</label>
+    <input id="companyname" type="text" name="companyname" value="MBCO">
+    <input type="submit">
+  </form>
+  
+
+
+</body>
+</html>
